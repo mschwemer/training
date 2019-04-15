@@ -22,6 +22,7 @@ The infrastructure basis is ddev :
 * `ddev start`
 * `ddev import-db` 
     * use `build/import/database/db.sql` as path
+* `cp build/import/configuration/DevelopmentConfiguration.php private/typo3conf/AdditionalConfiguration/`
 * now you are able to log into the BE with user `admin` and password `12345678` 
 
 ##  
