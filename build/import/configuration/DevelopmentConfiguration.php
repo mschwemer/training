@@ -8,6 +8,7 @@ $GLOBALS['TYPO3_CONF_VARS']['BE']['sessionTimeout'] = 9999999999;
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['enableDeprecationLog'] = '1';
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['curlUse'] = 1;
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['curlTimeout'] = 10;
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['trustedHostsPattern'] = '.*';
 
 // GRAPHICS
 $GLOBALS['TYPO3_CONF_VARS']['GFX']['im_path'] = '/usr/bin/';
@@ -47,7 +48,7 @@ $GLOBALS['TYPO3_CONF_VARS']['EXT']['extCache'] = '0';
 
 
 // Mail Settings
-$GLOBALS['TYPO3_CONF_VARS']['MAIL']['transport_smtp_server'] = 'mail:1025';
+$GLOBALS['TYPO3_CONF_VARS']['MAIL']['transport_smtp_server'] = '127.0.0.1:1025';
 $GLOBALS['TYPO3_CONF_VARS']['MAIL']['transport'] = 'smtp';
 $GLOBALS['TYPO3_CONF_VARS']['MAIL']['defaultMailFromAddress'] = 'docker@localhost';
 $GLOBALS['TYPO3_CONF_VARS']['MAIL']['defaultMailFromName'] = 'local - Docker';
