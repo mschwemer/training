@@ -20,9 +20,8 @@ The infrastructure basis is ddev :
 * `cd` to project root 
 * `composer install`
 * `ddev start`
-* `ddev import-db` 
-    * use `build/import/database/db.sql` as path
+* `ddev import-db` =>  use `build/import/database/db.sql` as path
+* `mkdir -p private/typo3conf/AdditionalConfiguration`    
 * `cp build/import/configuration/DevelopmentConfiguration.php private/typo3conf/AdditionalConfiguration/`
 * now you are able to log into the BE with user `admin` and password `12345678` 
 
-##  
