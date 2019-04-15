@@ -1,0 +1,143 @@
+###
+## diese Dateien/Ordner nicht mit GIT versionieren
+###
+
+# TYPO3 spezielle Dateien
+/var/
+/public/fileadmin
+/public/files
+/public/typo3temp
+/public/uploads
+/public/typo3conf/ENABLE_INSTALL_TOOL
+/public/typo3conf/AdditionalConfiguration
+/public/typo3conf
+/public/typo3conf/extTables.php
+/public/typo3conf/PackageStates.php
+/public/FIRST_INSTALL
+
+/private/fileadmin
+/private/files
+/private/typo3temp
+/private/uploads
+/private/typo3conf/ENABLE_INSTALL_TOOL
+/private/typo3conf/AdditionalConfiguration
+/private/typo3conf/ext
+/private/typo3conf/extTables.php
+/private/typo3conf/PackageStates.php
+/private/FIRST_INSTALL
+
+
+# in2template Ordner für TypoScripts mit Development Einstellungen
+/packages/in2template/Configuration/TypoScript/Setup/Development/**
+!/packages/in2template/Configuration/TypoScript/Setup/Development/.gitkeep
+/packages/in2template/Configuration/TypoScript/Constants/Development/**
+!/packages/in2template/Configuration/TypoScript/Constants/Development/.gitkeep
+/packages/in2template/Resources/Public/Css
+/packages/in2template/Resources/Public/Fonts
+/packages/in2template/Resources/Public/JavaScripts
+/packages/in2template/Resources/Public/Images
+/packages/in2template/Resources/Public/Icons
+
+# Generierte Dateien
+/build/.output
+/HTML-Prototype
+/Prestyledmodules
+
+# Dateien die per SYMLINK hinzugefügt werden
+# bzw. Logfiles und TXT-Files
+/public/typo3
+/public/typo3_src
+/public/index.php
+/public/typo3conf/*.log
+/public/ChangeLog
+/public/README.txt
+/public/GPL.txt
+/public/INSTALL.txt
+/public/LICENSE.txt
+/public/NEWS.txt
+/public/RELEASE_NOTES.txt
+
+/private/typo3
+/private/typo3_src
+/private/index.php
+/private/typo3conf/*.log
+/private/ChangeLog
+/private/README.txt
+/private/GPL.txt
+/private/INSTALL.txt
+/private/LICENSE.txt
+/private/NEWS.txt
+/private/RELEASE_NOTES.txt
+
+
+# dynamische Build-Files ausschließen
+/build/etc/
+node_modules
+/Export
+.sass-cache/
+npm-debug.log
+/.php_cs.cache
+
+# Docker spezifische Dateien
+/build/docker/backup/
+/.data/
+
+# Composer spezifische Dateien
+/vendor
+
+# IDE spezielle Dateien
+msi.iws
+.idea
+nbproject
+.svn
+.vscode
+
+# OS spezielle Dateien
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+###
+## diese Dateien/Ordner nicht mit GIT versionieren
+###
+
+
+
+
+# dynamische Build-Files ausschließen
+/build/etc/
+node_modules
+/Export
+.sass-cache/
+npm-debug.log
+/.php_cs.cache
+
+# Docker spezifische Dateien
+/build/docker/backup/
+/.data/
+
+# Composer spezifische Dateien
+/vendor
+
+# IDE spezielle Dateien
+msi.iws
+.idea
+nbproject
+.svn
+.vscode
+
+# OS spezielle Dateien
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo

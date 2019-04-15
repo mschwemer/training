@@ -1,0 +1,45 @@
+{
+  "name": "in2code/training",
+  "description": "Training Boilerplate based on sitepackagebuilder.com",
+  "authors": [
+    {
+      "name": "Marcus Schwemer",
+      "email": "marcus.schwemer@in2code.de"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "typo3/minimal": "^8.7",
+    "helhum/typo3-console": "^5.0",
+    "helhum/typo3-secure-web": "^0.2.8",
+    "in2code/training-sitepackage": "^1.0"
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "./packages/*/"
+    }
+  ],
+  "scripts": {
+    "package-states": [
+      "./vendor/bin/typo3cms install:generatepackagestates"
+    ],
+    "folder-structure": [
+      "./vendor/bin/typo3cms install:fixfolderstructure"
+    ],
+    "post-autoload-dump": [
+      "@package-states",
+      "@folder-structure"
+    ]
+  },
+  "extra": {
+    "typo3/cms": {
+      "root-dir": "private",
+      "web-dir": "public",
+      "public-core-folders": [
+        "uploads",
+        "fileadmin"
+      ]
+    }
+  }
+}
