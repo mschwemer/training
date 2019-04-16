@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5d856986e736ff9fd8a426d3fb6d28ca",
+    "content-hash": "48d5c2289dbdf1c44523277f8b667e9e",
     "packages": [
         {
             "name": "algo26-matthias/idna-convert",
@@ -1151,8 +1151,7 @@
             "dist": {
                 "type": "path",
                 "url": "./packages/training",
-                "reference": "4a4b77937c5d6697ccf1ecb2974d3ac5db3b60f8",
-                "shasum": null
+                "reference": "4a4b77937c5d6697ccf1ecb2974d3ac5db3b60f8"
             },
             "require": {
                 "typo3/cms-core": "^8.7",
@@ -1955,6 +1954,59 @@
             "description": "Classes for the TYPO3 backend.",
             "homepage": "https://typo3.org",
             "time": "2019-04-05T12:18:46+00:00"
+        },
+        {
+            "name": "typo3/cms-beuser",
+            "version": "8.7.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/beuser.git",
+                "reference": "7dd655cafbf84a3453617bff791933e4cfe314be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/beuser/zipball/7dd655cafbf84a3453617bff791933e4cfe314be",
+                "reference": "7dd655cafbf84a3453617bff791933e4cfe314be",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 <7.4",
+                "typo3/cms-core": "8.7.*@dev"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "replace": {
+                "beuser": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "beuser"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Beuser\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Backend user administration and overview. Allows you to compare the settings of users and verify their permissions and see who is online.",
+            "homepage": "https://typo3.org",
+            "time": "2019-01-22T15:57:06+00:00"
         },
         {
             "name": "typo3/cms-cli",
@@ -2935,6 +2987,59 @@
             "time": "2019-01-22T15:57:06+00:00"
         },
         {
+            "name": "typo3/cms-tstemplate",
+            "version": "8.7.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/tstemplate.git",
+                "reference": "e1fcc863d15b2343b19f12599654b149d46286e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/tstemplate/zipball/e1fcc863d15b2343b19f12599654b149d46286e3",
+                "reference": "e1fcc863d15b2343b19f12599654b149d46286e3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 <7.4",
+                "typo3/cms-core": "8.7.*@dev"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "replace": {
+                "tstemplate": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "partOfFactoryDefault": true
+                    },
+                    "extension-key": "tstemplate"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Tstemplate\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Framework for management of TypoScript template records for the CMS frontend.",
+            "homepage": "https://typo3.org",
+            "time": "2019-01-22T15:57:06+00:00"
+        },
+        {
             "name": "typo3/minimal",
             "version": "v8.7.0",
             "source": {
@@ -3069,7 +3174,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []

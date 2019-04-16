@@ -8,11 +8,14 @@
     }
   ],
   "minimum-stability": "dev",
+  "prefer-stable": true,
   "require": {
     "typo3/minimal": "^8.7",
     "helhum/typo3-console": "^5.0",
     "helhum/typo3-secure-web": "^0.2.8",
-    "in2code/training-sitepackage": "^1.0"
+    "in2code/training-sitepackage": "^1.0",
+    "typo3/cms-beuser": "^8.7",
+    "typo3/cms-tstemplate": "^8.7"
   },
   "repositories": [
     {
