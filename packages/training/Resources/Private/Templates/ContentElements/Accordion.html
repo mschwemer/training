@@ -1,0 +1,27 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Default"/>
+
+<f:section name="Main">
+
+    <f:translate key="LLL:EXT:training/Resources/Private/Language/locallang.xlf:key1" />
+
+    <div class="o-container {f:if(condition: data.frame_class, then: ' o-container--{data.frame_class}')}">
+        <f:render partial="Header/All" arguments="{_all}"/>
+
+        <dl class="c-accordions">
+            <f:for each="{accordions.accordions}" as="element">
+
+                <div class="c-accordion">{element.config.header}<div class="c-accordion__icon"></div></div>
+                <div class="c-accordion c-accordion__content">
+                    <f:format.html parseFuncTSPath="lib.parseFunc">{element.config.text}</f:format.html>
+                </div>
+                <div class="c-accordion c-accordion__icon"></div>
+            </f:for>
+        </dl>
+
+    </div>
+</f:section>
+
+</html>

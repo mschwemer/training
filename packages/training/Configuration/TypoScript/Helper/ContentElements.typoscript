@@ -1,0 +1,21 @@
+tt_content.ce\.accordion = FLUIDTEMPLATE
+tt_content.ce\.accordion {
+    template = FILE
+    template.file = EXT:training/Resources/Private/Templates/ContentElements/Accordion.html
+
+    partialRootPaths {
+        0 = EXT:fluid_styled_content/Resources/Private/Partials
+        10 = EXT:training/Resources/Private/Partials/FluidStyledContent
+    }
+
+    layoutRootPaths {
+        0 = EXT:fluid_styled_content/Resources/Private/Layouts
+        10 = EXT:training/Resources/Private/Layouts/FluidStyledContent
+    }
+
+    dataProcessing.10 = In2code\Training\DataProcessing\FlexFormProcessor
+    dataProcessing.10 {
+        fieldName = pi_flexform
+        as = accordions
+    }
+}

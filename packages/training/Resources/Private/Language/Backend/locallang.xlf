@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2015-12-24T00:00:00Z" product-name="in2template">
+        <header />
+        <body>
+            <trans-unit id="ce.accordion">
+                <source>Accordion</source>
+            </trans-unit>
+            <trans-unit id="ce.accordion.header">
+                <source>Accordion</source>
+            </trans-unit>
+            <trans-unit id="ce.accordion.description">
+                <source>Provides a "Accordion" content element</source>
+            </trans-unit>
+            <trans-unit id="ce.accordion.elements">
+                <source>Accordion elements</source>
+            </trans-unit>
+            <trans-unit id="ce.accordion.element">
+                <source>Accordion element</source>
+            </trans-unit>
+            <trans-unit id="ce.accordion.element.header">
+                <source>Accordion element header</source>
+            </trans-unit>
+            <trans-unit id="ce.accordion.element.text">
+                <source>Accordion element text</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
