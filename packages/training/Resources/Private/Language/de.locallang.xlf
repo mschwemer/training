@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2019-04-15UTC15:47:200">
+    <file source-language="en"  target-language="de" datatype="plaintext" original="messages" date="2019-04-15UTC15:47:200">
         <header>
             <authorName>Marcus Schwemer</authorName>
             <authorEmail>marcus.schwemer@in2code.de</authorEmail>
         </header>
         <body>
             <trans-unit id="key1">
-                <source>Test</source>
+                <source>Englisch</source>
+                <target>Deutsch</target>
             </trans-unit>
         </body>
     </file>
