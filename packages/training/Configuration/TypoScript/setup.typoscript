@@ -7,7 +7,7 @@
 ################
 #### HELPER ####
 ################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:training/Configuration/TypoScript/Helper/DynamicContent.typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:training/Configuration/TypoScript/Helper/">
 
 
 ##############
@@ -16,11 +16,22 @@
 page = PAGE
 page {
 
-    10 = COA
-    10 {
-
+    5 = FLUIDTEMPLATE
+    5.templateName = Default
+    5 {
+        templateRootPaths {
+            0 = EXT:training/Resources/Private/Templates/Page/
+            1 = {$page.fluidtemplate.templateRootPath}
+        }
+        partialRootPaths {
+            0 = EXT:training/Resources/Private/Partials/Page/
+            1 = {$page.fluidtemplate.partialRootPath}
+        }
+        layoutRootPaths {
+            0 = EXT:training/Resources/Private/Layouts/Page/
+            1 = {$page.fluidtemplate.layoutRootPath}
+        }
     }
-
     includeCSSLibs {
 
     }
