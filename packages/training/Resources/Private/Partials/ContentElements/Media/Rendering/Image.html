@@ -1,0 +1,28 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:spaceless>
+    <figure>
+        <picture>
+            <source srcset="{f:uri.image(image:file,width:'1920',cropVariant:'desktop')}" media="(min-width:1200px)"/>
+            <source srcset="{f:uri.image(image:file,width:'1200',cropVariant:'mobile')}" media="(min-width:768px)"/>
+            <source srcset="{f:uri.image(image:file,width:'768')}" media="(min-width:480px)"/>
+            <source srcset="{f:uri.image(image:file,width:'480')}" media="(min-width:0px)"/>
+            <f:media class="image-embed-item" file="{file}" width="{dimensions.width}" height="{dimensions.height}"
+                     alt="{f:if(condition: 'file.alternative', then: file.alternative, else: file.properties.alternative)}"
+                     title="{f:if(condition: 'file.title', then: file.title, else: file.properties.title)}"/>
+        </picture>
+        <f:if condition="{file.properties.creator} !='' || {file.description} != '' || {file.properties.description} !=''">
+            <f:then>
+                <figcaption>
+                    {f:if(condition: 'file.description', then: file.description, else: file.properties.description)}
+                    <f:if condition='{file.properties.creator}'>
+                        <span class='caption__copyright'>&copy; {file.properties.creator}</span>
+                    </f:if>
+                </figcaption>
+            </f:then>
+            <f:else>
+                <figcaption>Unser Bild</figcaption>
+            </f:else>
+        </f:if>
+    </figure>
+</f:spaceless>
+</html>
