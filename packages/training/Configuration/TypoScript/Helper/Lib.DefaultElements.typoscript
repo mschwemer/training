@@ -1,0 +1,15 @@
+lib.defaultElements = COA
+lib.defaultElements {
+    10 = CONTENT
+    10 {
+        table = tt_content
+        select {
+            pidInList = 11
+            andWhere = colPos = 2
+            orderBy = sorting
+        }
+        renderObj = < tt_content
+        wrap =
+        stdWrap =
+    }
+}
