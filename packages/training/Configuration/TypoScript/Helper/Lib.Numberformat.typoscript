@@ -1,0 +1,10 @@
+
+lib.carViews = TEXT
+lib.carViews {
+    value = 8000
+    stdWrap.numberFormat.decimals = 2
+    stdWrap.numberFormat.dec_point = ,
+    stdWrap.numberFormat.thousands_sep.cObject = TEXT
+    stdWrap.numberFormat.thousands_sep.cObject.value = .
+}
+# Could result in something like "9.586,007".
