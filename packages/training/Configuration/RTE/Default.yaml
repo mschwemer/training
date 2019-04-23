@@ -7,8 +7,16 @@ editor:
     config:
         contentsCss: "EXT:training/Resources/Public/Css/rte.css"
 
+        disallowedContent: 'img; table[,width,height,cellspacing,cellpadding,border,align,summary]{width,height};caption; '
+
+        forcePasteAsPlainText: true
+
+        format_tags: "p;h2;h3;h4;h5;pre"
+
         stylesSet:
             - { name: "Lead", element: "p", attributes: { 'class': 'lead' } }
+            - { name: "Rot", element: "h2", attributes: { 'class': 'headline--red' } }
+
 
         toolbarGroups:
             - { name: styles, groups: [ format, styles ] }
@@ -22,7 +30,6 @@ editor:
             - { name: tools, groups: [ table, specialchar ] }
             - { name: document, groups: [ mode ] }
 
-        format_tags: "p;h1;h2;h3;h4;h5;pre"
 
         justifyClasses:
             - text-left
